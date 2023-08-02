@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import {AiOutlineStar, AiFillStar, AiOutlineArrowRight} from "react-icons/ai"
 import Company from "./company.json"
 import Work from "./work.json";
+import { motion } from "framer-motion";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import a from "./img/Lt.png"
@@ -65,7 +66,14 @@ breakpoints={{
             </Container>
 
             <Container className="py-5 text-white">
-                <div className="d-md-flex justify-content-between">
+                <motion.div className="d-md-flex justify-content-between"
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 1.5,
+                  }}
+                >
 <div className=" my-auto">
 <h1 className="fw-light">
     Why Seek us For Job? 
@@ -82,9 +90,16 @@ breakpoints={{
 </div>
 <Lottie animationData={Work} loop={true} className="d-none d-md-block"/>
 
-                </div>
+                </motion.div>
 
-                <div className="d-md-flex justify-content-between pt-4">
+                <motion.div className="d-md-flex justify-content-between pt-4"
+                 initial={{ opacity: 0, scale: 0.5 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 viewport={{ once: true }}
+                 transition={{
+                   duration: 1.5,
+                 }}
+                >
                 <Lottie animationData={Company} loop={true}className="d-none d-md-block"/>
 <div className=" my-auto ">
 <h1 className="fw-light">
@@ -102,7 +117,7 @@ breakpoints={{
 </div>
 
 
-                </div>
+                </motion.div>
             </Container>
 
 

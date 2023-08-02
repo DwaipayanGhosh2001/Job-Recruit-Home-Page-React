@@ -11,7 +11,8 @@ return (
 <Container className="mt-3 mb-5 py-3">
     <div className=" d-md-flex justify-content-between w-100 my-5 py-5">
         <div className="my-auto text-white mx-auto w-100 ">
-            <h1 className="">
+
+            <h1 className="fs-1">
                 Find Your <span className="text-decoration-underline">Dream Job</span> Here.
             </h1>
             <p className="fs-3 fst-italic">

@@ -23,7 +23,11 @@ function Navvbar() {
   return (
     <Container className='mx-auto  w-100'>
       <Navbar expand="md"> 
-        <NavbarBrand className='text-sucwhite fw-bold text-uppercase fs-2'>JobKart</NavbarBrand>
+        <NavbarBrand className='text-white fw-bold text-uppercase fs-2' style={{fontFamily: "cursive"}}>Job 
+        <span className='text-dark'>
+        Kart
+        </span>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} className=''/>
         <Collapse isOpen={isOpen} navbar>
             <div>
