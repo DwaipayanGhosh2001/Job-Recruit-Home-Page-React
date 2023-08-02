@@ -26,7 +26,7 @@ return (
             </button>
         </div>
         <div className=" w-75 ms-md-auto  mx-auto mx-md-0">
-        <Lottie animationData={First} loop={true} className="w-75 ms-md-auto mx-auto mx-md-0"/>
+        <Lottie animationData={First} loop={true} className="w-75 ms-md-auto mx-auto mx-md-0 mt-4 mt-md-0"/>
         </div>
       
     
